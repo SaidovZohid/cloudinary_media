@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	cld, _ := cloudinary.NewFromParams("dmgdx6d2k", "812424215562115", "2HZTqt8rbdtKjwYTfvBb9R-Gvns")
+	cld, _ := cloudinary.NewFromParams("<your-cloud-name>", "<your-api-key>", "<your-api-secret>")
 
 	db, err := gorm.Open(sqlite.Open("image.db"), &gorm.Config{})
 	if err != nil {
